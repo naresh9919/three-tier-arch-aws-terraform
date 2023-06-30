@@ -1,10 +1,10 @@
 # Generic variables
-region = "us-east-1"
+region = "ap-south-1"
 
 # VPC variables
 vpc_name             = "demo-vpc"
 vpc_cidr             = "10.0.0.0/16"
-vpc_azs              = ["us-east-1a", "us-east-1b", "us-east-1c"]
+vpc_azs              = ["ap-south-1a", "ap-south-1b", "ap-south-1c"]
 vpc_public_subnets   = ["10.0.1.0/24", "10.0.2.0/24", "10.0.3.0/24"]
 vpc_private_subnets  = ["10.0.11.0/24", "10.0.12.0/24", "10.0.13.0/24"]
 vpc_database_subnets = ["10.0.21.0/24", "10.0.22.0/24", "10.0.23.0/24"]
@@ -23,7 +23,7 @@ asg_health_check_type                   = "EC2"
 asg_launch_template_name                = "demo-lt"
 asg_launch_template_description         = "demo-lt"
 asg_update_default_version              = true
-asg_image_id                            = "ami-026b57f3c383c2eec"
+asg_image_id                            = "ami-006935d9a6773e4ec"
 asg_instance_type                       = "t3.micro"
 asg_ebs_optimized                       = true
 asg_enable_monitoring                   = true
@@ -55,7 +55,7 @@ rds_sg_description                        = "demo-rds-sg"
 rds_sg_tags                               = { "Name" = "demo-rds-sg", "created-by" = "terraform" }
 rds_identifier                            = "demo-rds"
 rds_mysql_engine                          = "mysql"
-rds_engine_version                        = "8.0.27"
+rds_engine_version                        = "8.0.33"
 rds_family                                = "mysql8.0" # DB parameter group
 rds_major_engine_version                  = "8.0"      # DB option group
 rds_instance_class                        = "db.t2.small"

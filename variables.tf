@@ -2,7 +2,7 @@
 variable "region" {
   description = "Region code"
   type        = string
-  default     = "us-east-1"
+  default     = "ap-south-1"
 }
 
 # VPC variables
@@ -21,7 +21,7 @@ variable "vpc_cidr" {
 variable "vpc_azs" {
   description = "List of AZs"
   type        = list(string)
-  default     = ["us-east-1a", "us-east-1b", "us-east-1c"]
+  default     = ["ap-south-1a", "ap-south-1b", "ap-south-1c"]
 }
 
 variable "vpc_public_subnets" {
@@ -125,7 +125,7 @@ variable "asg_update_default_version" {
 variable "asg_image_id" {
   description = "Auto scaling group image id"
   type        = string
-  default     = "ami-026b57f3c383c2eec"
+  default     = "ami-006935d9a6773e4ec"
 }
 
 variable "asg_instance_type" {
